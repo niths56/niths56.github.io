@@ -1,71 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nithyashree Yogamurthi | Software Engineer</title>
 
-<title>Nithyashree Yogamurthi |Software Engineer Building Data & AI Systems</title>
-
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-body{
-margin:0;
-font-family:Arial;
-background:#0f172a;
-color:white;
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0f172a, #1e293b);
+    color: white;
+    scroll-behavior: smooth;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-padding:20px 10%;
-background:#020617;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: rgba(2, 6, 23, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
+nav h3 {
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-header{
-padding:120px 10%;
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-h1{
-font-size:50px;
+nav a:hover {
+    color: #6366f1;
 }
 
-section{
-padding:80px 10%;
+header {
+    padding: 160px 10% 80px 10%;
+    text-align: center;
 }
 
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
+header h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
 }
 
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:10px;
-transition:0.3s;
+header p {
+    font-size: 20px;
+    color: #cbd5e1;
 }
 
-.card:hover{
-transform:translateY(-8px);
+section {
+    padding: 80px 10%;
 }
 
-.skills span{
-background:#1e293b;
-padding:8px 12px;
-margin:5px;
-display:inline-block;
-border-radius:5px;
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f8fafc;
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.skills span {
+    background: #334155;
+    padding: 8px 14px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.skills span:hover {
+    background: #6366f1;
+}
+
+section p {
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 10px 0;
+    background: #6366f1;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+a.button:hover {
+    background: #4f46e5;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
 </style>
-
 </head>
 
 <body>
@@ -346,22 +422,10 @@ Implemented collaborative filtering techniques to enhance recommendation accurac
 </section>
 
 <section id="contact">
-
 <h2>Contact</h2>
-
-<p>Email: nithyawork05@gmail.com</p>
-
-<p>
-GitHub:
-<a href="https://github.com/niths56">github.com/niths56</a>
-</p>
-  
-<p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/nithyashree-yogamurthi-2342b4222" target="_blank">
-  www.linkedin.com/in/nithyashree-yogamurthi-2342b4222
-</a>
-</p>
+<p>Email: <a class="button" href="mailto:nithyawork05@gmail.com">nithyawork05@gmail.com</a></p>
+<p>GitHub: <a class="button" href="https://github.com/niths56" target="_blank">github.com/niths56</a></p>
+<p>LinkedIn: <a class="button" href="https://www.linkedin.com/in/nithyashree-yogamurthi-2342b4222" target="_blank">linkedin.com/in/nithyashree-yogamurthi</a></p>
 </section>
 
 </body>
