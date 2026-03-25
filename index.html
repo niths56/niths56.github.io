@@ -177,158 +177,105 @@ I am actively seeking entry-level and new graduate opportunities in Software Eng
 
 <div class="projects">
 
+<!-- Pricing -->
 <div class="card">
-
 <h3>Pricing Automation Tool (Python Desktop Application)</h3>
-
 <p>
+Developed a Python-based desktop application to automate monthly product repricing workflows for large supplier datasets.
 
-Developed a Python-based desktop application to automate monthly product repricing workflows for large supplier datasets. The system ingests structured Excel and CSV files containing supplier cost, product identifiers, and margin requirements.
+Implemented data processing using Pandas to clean, validate, and apply pricing logic. Built a Tkinter GUI for file upload, processing, and report generation.
 
-Implemented a data processing pipeline using Pandas to clean, normalize, and validate supplier data before applying pricing logic. The application calculates site cost, markup values, and final site price using configurable gross profit rules.
+Generated audit-ready Excel reports with pricing insights, reducing manual effort and improving workflow efficiency.
 
-Built a graphical user interface using Tkinter that allows users to upload pricing files, trigger automated pricing calculations, and export structured reports. Implemented validation checks for missing values, incorrect product mappings, and pricing inconsistencies.
-
-The system outputs audit-ready Excel reports that include calculated pricing fields, margin analysis, and exception flags, significantly reducing manual spreadsheet work and improving pricing decision workflows.
-
-<b>Technologies:</b> Python, Pandas, Tkinter, Excel, CSV Processing
-
+<b>Technologies:</b> Python, Pandas, Tkinter, Excel
 </p>
-
 </div>
 
+<!-- Heart Attack -->
 <div class="card">
-
 <h3>Heart Attack Prediction System</h3>
-
 <p>
+Developed a machine learning pipeline using AWS and Apache Spark for healthcare data processing.
 
-Developed a machine learning pipeline to predict heart attack risk using healthcare datasets.
+Trained and deployed an XGBoost model using SageMaker with real-time prediction via Lambda and SNS alerts.
 
-Built data processing workflows on AWS using S3 and EMR, leveraging Apache Spark for large-scale data transformation and feature engineering.
-
-Trained an XGBoost classification model to identify high-risk patients and deployed it using AWS SageMaker. Integrated AWS Lambda and SNS to enable real-time predictions and alert notifications.
-
-The system demonstrates end-to-end machine learning deployment, including data ingestion, model training, and real-time inference.
-
-<b>Technologies:</b> Python, Pandas, Apache Spark, AWS (S3, EMR, SageMaker, Lambda, SNS), XGBoost
-
+<b>Technologies:</b> Python, Spark, AWS (S3, EMR, SageMaker, Lambda), XGBoost
 </p>
+</div>
 
-  <h3>Video Transcription & NLP Pipeline</h3>
-
+<!-- Video NLP -->
+<div class="card">
+<h3>Video Transcription & NLP Pipeline</h3>
 <p>
+Built a pipeline to convert audio/video into text using Amazon Transcribe.
 
-Developed a data pipeline to process audio and video content and convert it into structured text data.
+Applied NLP techniques to extract insights from unstructured text data.
 
-Utilized Amazon Transcribe to perform speech-to-text conversion and stored outputs for further analysis. Applied natural language processing techniques to extract key phrases and insights from unstructured text.
-
-Designed the pipeline to handle large media files efficiently and enable downstream analytics on textual data.
-
-The system demonstrates handling of unstructured data, text processing, and scalable cloud-based pipelines.
-
-<b>Technologies:</b> Python, AWS (S3, Transcribe), NLP, Text Processing
-
+<b>Technologies:</b> Python, AWS (S3, Transcribe), NLP
 </p>
+</div>
 
-  <h3>Netflix Ratings & Viewing Trends Prediction</h3>
-
+<!-- Netflix -->
+<div class="card">
+<h3>Netflix Ratings & Viewing Trends Prediction</h3>
 <p>
+Built ML models to predict user ratings and preferences using feature engineering and preprocessing.
 
-Developed a machine learning pipeline to predict user ratings and viewing behavior using Netflix dataset.
+Trained XGBoost models for regression and classification, achieving ~83% accuracy and deployed using SageMaker.
 
-Performed data preprocessing and feature engineering, including one-hot encoding and creation of behavioral features such as watch ratio. Converted data into LIBSVM format for efficient model training.
-
-Trained XGBoost models for both regression (rating prediction) and classification (like/dislike prediction), achieving ~83% accuracy on the test set. Deployed the model using Amazon SageMaker and created a real-time inference endpoint.
-
-Monitored model performance using logs and visualized insights such as genre distribution and prediction accuracy.
-
-<b>Technologies:</b> Python, Pandas, XGBoost, AWS (S3, SageMaker), Data Preprocessing, Machine Learning
-
+<b>Technologies:</b> Python, Pandas, XGBoost, AWS (S3, SageMaker)
 </p>
-  
+</div>
 
+<!-- Ghibli -->
+<div class="card">
 <h3>AI-Generated Ghibli Trends Analytics Dashboard</h3>
-
 <p>
+Analyzed engagement trends using Pandas and built interactive visualizations using Plotly.
 
-Built a data analytics pipeline to analyze engagement trends and growth patterns for AI-generated Ghibli-style digital content across online platforms.
+Developed dashboards to track growth patterns and content performance.
 
-Performed data preprocessing and exploratory data analysis using Pandas to identify patterns in user engagement metrics such as likes, shares, and interaction rates. Aggregated temporal data to analyze content popularity trends over time.
-
-Developed interactive visualizations using Plotly to present insights including engagement distributions, trend growth curves, and category-based comparisons.
-
-The dashboard provides an analytical interface for exploring content performance patterns and demonstrates the use of Python-based data pipelines for extracting insights from large structured datasets.
-
-<b>Technologies:</b> Python, Pandas, Plotly, Data Visualization
-
+<b>Technologies:</b> Python, Pandas, Plotly
 </p>
-
 </div>
 
+<!-- Fetal -->
 <div class="card">
-
 <h3>Machine Learning Pipeline for Fetal Health Risk Prediction</h3>
-
 <p>
+Developed ML models to classify fetal health using clinical datasets and preprocessing techniques.
 
-Developed a supervised machine learning pipeline to predict fetal health conditions using structured clinical datasets containing fetal heart rate indicators and physiological parameters.
+Evaluated performance using precision, recall, and F1-score to ensure reliable predictions.
 
-Implemented data preprocessing workflows including missing value handling, feature scaling, and outlier detection. Performed exploratory data analysis to identify key predictive features affecting fetal health classification.
-
-Trained multiple classification models using Scikit-learn including Random Forest, Logistic Regression, and Decision Tree classifiers. Addressed dataset imbalance through evaluation metrics such as recall, precision, and F1-score to ensure reliable predictions.
-
-Evaluated model performance through cross-validation and confusion matrix analysis to improve predictive reliability and minimize classification bias.
-
-<b>Technologies:</b> Python, Pandas, Scikit-learn, Machine Learning, Data Analysis
-
+<b>Technologies:</b> Python, Pandas, Scikit-learn
 </p>
-
 </div>
-  
- <div class="card">
 
-<h3>Full-Stack College Management Information System</h3>
-
-<p>
-
-Developed a full-stack web application to manage student records, course enrollment data, and academic administration workflows.
-
-Designed relational database schemas in MySQL to store structured data including student information, course details, faculty records, and enrollment relationships.
-
-Implemented dynamic CRUD operations using JavaScript and AJAX to enable asynchronous data updates without page reloads. Developed responsive frontend interfaces using HTML and CSS to allow administrators to create, update, and retrieve records efficiently.
-
-Integrated frontend forms with backend SQL queries to enable real-time database interactions and maintain data consistency across the system.
-
-<b>Technologies:</b> HTML, CSS, JavaScript, AJAX, MySQL
-
-</p>
-
-</div>
+<!-- College -->
 <div class="card">
-
-
-
-<h3>Android Music Player Application</h3>
-
+<h3>Full-Stack College Management Information System</h3>
 <p>
+Built a full-stack web application with MySQL database and dynamic CRUD operations using JavaScript and AJAX.
 
-Developed a mobile music player application using Java and Android Studio to enable local audio playback on Android devices.
+Enabled efficient data management for student and academic records.
 
-Integrated Android MediaPlayer APIs to handle audio streaming, playback control, and background media processing. Implemented functionality for play, pause, skip, and track navigation.
-
-Designed mobile user interfaces to display music libraries and playback controls using Android XML layouts. Implemented event-driven programming to manage user interaction and media state transitions.
-
-The application demonstrates mobile application architecture, media handling, and Android lifecycle management.
-
-<b>Technologies:</b> Java, Android Studio, Android SDK, MediaPlayer API
-
+<b>Technologies:</b> HTML, CSS, JavaScript, MySQL
 </p>
+</div>
 
+<!-- Android -->
+<div class="card">
+<h3>Android Music Player Application</h3>
+<p>
+Developed a mobile application for audio playback using Android MediaPlayer APIs.
+
+Implemented UI and playback controls with event-driven architecture.
+
+<b>Technologies:</b> Java, Android Studio, MediaPlayer API
+</p>
 </div>
 
 </div>
-
 </section>
 
 <section id="experience">
